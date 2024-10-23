@@ -1,5 +1,5 @@
 import "./App.css";
-import Home from "./components/Home";
+
 const data = {
   destinations: [
     {
@@ -116,11 +116,7 @@ const data = {
   ],
 };
 function App() {
-  return (
-    <div>
-      <Home />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
