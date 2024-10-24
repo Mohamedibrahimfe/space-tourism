@@ -1,0 +1,128 @@
+.destination {
+  position: absolute;
+  color: white;
+}
+.title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 80px;
+}
+.title h1 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+}
+.title h1 span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.7px;
+  color: #ffffff48;
+}
+.dest-list {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  color: white;
+  z-index: 999;
+}
+.dest-list li h1 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2.36px;
+  cursor: pointer;
+}
+.dest-list li h1.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin-top: 5px;
+}
+.details {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+}
+.details h1 {
+  font-family: "Barlow Condensed";
+  font-weight: 100;
+  font-size: 74px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.details p {
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  width: 90%;
+  text-align: center;
+  color: #d0d6f9;
+}
+.details .distance p {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-block: 10px;
+  width: 100%;
+}
+.details hr {
+  width: 80%;
+  height: 1px;
+  border: none;
+  background: #383b4b;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.details h2 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}

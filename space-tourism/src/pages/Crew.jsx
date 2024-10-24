@@ -1,4 +1,4 @@
-const Crew = () => {
+const Crew = (props) => {
   return <h1>Crew</h1>;
 };
 

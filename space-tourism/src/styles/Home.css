@@ -59,3 +59,14 @@ picture img {
   font-size: 15px;
   font-weight: 100;
 }
+.content button:hover::before {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  border-radius: 100%;
+  padding: 2rem;
+  animation: 0.36s ease-in 0s 1 normal none running pulse;
+}
