@@ -13,6 +13,9 @@ import "./index.css";
 import "./styles/Layout.css";
 import "./styles/Home.css";
 import "./styles/Dest.css";
+import "./styles/Crew.css";
+import "./styles/Technology.css";
+
 const data = {
   destinations: [
     {
@@ -139,8 +142,11 @@ export default function App() {
             path="destination"
             element={<Destination destData={data.destinations} />}
           />
-          <Route path="crew" element={<Crew />} />
-          <Route path="technology" element={<Technology />} />
+          <Route path="crew" element={<Crew crewData={data.crew} />} />
+          <Route
+            path="technology"
+            element={<Technology techData={data.technology} />}
+          />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
