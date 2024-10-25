@@ -16,6 +16,9 @@ import "./styles/Dest.css";
 import "./styles/Crew.css";
 import "./styles/Technology.css";
 
+
+import "animate.css";
+
 const data = {
   destinations: [
     {

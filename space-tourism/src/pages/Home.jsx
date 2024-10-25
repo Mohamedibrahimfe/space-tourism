@@ -19,8 +19,8 @@ const Home = () => {
         src="./assets/home/background-home-desktop.jpg"
         alt="The moon and stars in space"
       />
-      <div className="content">
-        <div className="text">
+      <div className="content ">
+        <div className="text animate__animated animate__fadeInLeft animate__delay-0.5s">
           <h1>So, you want to travel to</h1>
           <h2>Space</h2>
           <p>
@@ -31,7 +31,10 @@ const Home = () => {
           </p>
         </div>
         <div className="explore-container">
-          <Link to="/destination" className="explore">
+          <Link
+            to="/destination"
+            className="explore animate__animated animate__fadeInRight animate__delay-1s"
+          >
             Explore
           </Link>
         </div>

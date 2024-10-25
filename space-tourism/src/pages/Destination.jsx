@@ -26,11 +26,15 @@ const Destination = (props) => {
         </h1>
       </div>
 
-      <ul className="dest-list">
+      <ul className="dest-list animate__animated animate__fadeIn animate__delay-1s">
         {props.destData.map((item) => {
           return (
             <li key={item.name} onClick={() => setActive(item.name)}>
-              <h1 className={active === item.name ? "active" : ""}>
+              <h1
+                className={
+                  active === item.name ? "active animate__heartBeat" : ""
+                }
+              >
                 {item.name}
               </h1>
             </li>
@@ -42,13 +46,13 @@ const Destination = (props) => {
         <p>{props.destData.find((item) => item.name === active).description}</p>
         <hr></hr>
         <div className="distance">
-          <div>
+          <div className="animate__animated animate__flash">
             <h2>avg. distance</h2>
             <h6>
               {props.destData.find((item) => item.name === active).distance}
             </h6>
           </div>
-          <div>
+          <div className="animate__animated animate__flash">
             <h2>est. travel time</h2>
             <h6>
               {props.destData.find((item) => item.name === active).travel}

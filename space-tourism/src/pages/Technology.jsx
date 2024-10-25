@@ -36,7 +36,11 @@ const Technology = (props) => {
                 setActive(item.name);
                 setActiveNumber(index + 1);
               }}
-              className={active === item.name ? "active" : ""}
+              className={
+                active === item.name
+                  ? "active animate__animated animate__rubberBand"
+                  : ""
+              }
             >
               <p className="number">{numbers.indexOf(index) + 2}</p>
             </li>
@@ -44,8 +48,12 @@ const Technology = (props) => {
         })}
       </ul>
       <div className="tech-info">
-        <h1 className="tech-title">The terminology...</h1>
-        <h2 className="tech-name">{active}</h2>
+        <h1 className="tech-title animate__animated animate__rubberBand">
+          The terminology...
+        </h1>
+        <h2 className="tech-name animate__animated animate__fadeIn animate__delay-1s">
+          {active}
+        </h2>
         <p className="tech-description">
           {props.techData[activeNumber - 1].description}
         </p>

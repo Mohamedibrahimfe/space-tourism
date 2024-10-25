@@ -6,8 +6,12 @@ const Crew = (props) => {
       while (item.name === active) {
         return (
           <div key={item.name}>
-            <h1 className="role">{item.role}</h1>
-            <h2 className="crew-name">{item.name}</h2>
+            <h1 className="role animate__animated animate__rubberBand">
+              {item.role}
+            </h1>
+            <h2 className="crew-name animate__animated animate__fadeIn animate__delay-1s">
+              {item.name}
+            </h2>
             <p className="crew-bio">{item.bio}</p>
           </div>
         );
