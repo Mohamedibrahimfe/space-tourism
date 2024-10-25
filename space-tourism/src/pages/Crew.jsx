@@ -39,19 +39,21 @@ const Crew = (props) => {
         </h1>
       </div>
       <hr></hr>
-      <ul>
-        {props.crewData.map((item) => {
-          return (
-            <li
-              key={item.name}
-              onClick={() => setActive(item.name)}
-              className={active === item.name ? "active dot" : "dot"}
-            ></li>
-          );
-        })}
-      </ul>
+      <div className="container">
+        <ul className="crew-list">
+          {props.crewData.map((item) => {
+            return (
+              <li
+                key={item.name}
+                onClick={() => setActive(item.name)}
+                className={active === item.name ? "active dot" : "dot"}
+              ></li>
+            );
+          })}
+        </ul>
 
-      <div className="content">{getTheItemData(active)}</div>
+        <div className="content">{getTheItemData(active)}</div>
+      </div>
     </picture>
   );
 };

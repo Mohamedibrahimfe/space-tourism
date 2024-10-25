@@ -97,3 +97,40 @@
     line-height: 25px;
   }
 }
+@media (min-width: 1200px) {
+  .crew .container{
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    width: 400px;
+  }
+  .crew .role{
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 400px;
+  }
+  .crew h2{
+    font-size: 55px!important;
+    line-height: 40px!important;
+    margin-top: 50px;
+    text-wrap: nowrap;
+    margin-bottom: 50px;
+    width: 100%;
+    
+  }
+  .crew-list{
+    top: 200px!important;
+    left: 33%!important;
+    width: 400px;
+  }
+  .crew-bio{
+    width: 60%!important;
+    text-align: left!important;
+    margin-left: 0!important;
+    width: 400px;
+    min-height: 200px;
+    max-height: 200px!important;
+  }
+}

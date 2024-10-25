@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 const Layout = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -18,26 +18,39 @@ const Layout = () => {
         </div>
         <ul className="nav-list">
           <li>
-            <Link to="/">
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/"
+            >
               <span>00</span> Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/destination">
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/destination"
+            >
               <span>01</span> Destination
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/crew">
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/crew"
+            >
               <span>02</span> Crew
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/technology">
+            <NavLink
+              className={({ isActive }) => (isActive ? "active" : "")}
+              to="/technology"
+            >
               <span>03</span> Technology
-            </Link>
+            </NavLink>
           </li>
         </ul>
+        <div className="line"></div>
         <div className="burger-menu" onClick={() => setOpenMenu(!openMenu)}>
           {openMenu ? (
             <img src="./assets/shared/icon-close.svg" alt="logo" />

@@ -83,3 +83,44 @@
     width: 60%!important;
   }
 }
+@media (min-width: 1200px) {
+  .tech-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 10%!important;
+  }
+  .tech-list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  .tech-info{
+    top: 55%;
+    left: 30%;
+    width: 400px;
+  }
+  .tech-title{
+    /* background-color: white; */
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .tech-name{
+    letter-spacing: 11px;
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%!important;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .tech-description{
+    text-align: left!important;
+    width: 100%!important;
+  }
+}

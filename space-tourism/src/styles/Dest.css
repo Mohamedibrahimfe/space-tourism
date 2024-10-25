@@ -157,3 +157,33 @@
     margin-bottom: 25px;
   }
 }
+@media (min-width: 1200px) {
+  .title{
+    top: 150px;
+    left: 210px!important;
+  }
+  .dest-list{
+    top: 30%!important;
+    margin-left: 16.5%;
+  }
+  .destination .details{
+    top: 55%!important;
+    margin-left: 18%;
+    text-align: left;
+  }
+  .destination .details p{
+    width: 20%;
+    text-align: left;
+  }
+  .distance{
+    text-align: left!important;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .distance div h2{
+    letter-spacing: 3.3625px;
+  }
+  .details hr{
+
+  }
+}

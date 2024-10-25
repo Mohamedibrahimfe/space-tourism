@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     // <>
-    <picture>
+    <picture className="home">
       <source
         srcSet="./assets/home/background-home-mobile.jpg"
         media="(max-width: 600px)"
@@ -19,30 +20,23 @@ const Home = () => {
         alt="The moon and stars in space"
       />
       <div className="content">
-        <h1>So, you want to travel to</h1>
-        <h2>Space</h2>
-        <p>
-          Let’s face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we’ll give you a truly out of this world
-          experience!
-        </p>
-        <button>Explore</button>
+        <div className="text">
+          <h1>So, you want to travel to</h1>
+          <h2>Space</h2>
+          <p>
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div className="explore-container">
+          <Link to="/destination" className="explore">
+            Explore
+          </Link>
+        </div>
       </div>
     </picture>
-    // </>
-    //  00 Home
-    //  01 Destination
-    //  02 Crew
-    //  03 Technology
-
-    //  So, you want to travel to
-    //  Space
-    //  Let’s face it; if you want to go to space, you might as well genuinely go to
-    //  outer space and not hover kind of on the edge of it. Well sit back, and relax
-    //  because we’ll give you a truly out of this world experience!
-
-    //  Explore
   );
 };
 

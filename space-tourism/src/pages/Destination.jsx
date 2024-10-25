@@ -25,6 +25,7 @@ const Destination = (props) => {
           <span>01</span> Pick your destination
         </h1>
       </div>
+
       <ul className="dest-list">
         {props.destData.map((item) => {
           return (
