@@ -22,12 +22,12 @@ nav ul{
     position: absolute;
     right: -200px;
     transition: right 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 nav ul.open{
     top: 0px;
     right: 0px;
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     width: 254px;
     backdrop-filter: blur(50px);
@@ -51,22 +51,39 @@ nav ul li a:hover{
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .burger-menu{
         display: none;
     }
     nav ul{
-        
-    }
-    nav ul.open{
-        top: 0px;
+        flex-direction: row;
         right: 0px;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 254px;
-        backdrop-filter: blur(50px);
-        padding-top: 100px;
-        z-index: 99999;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(100px);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    }
+    nav ul span{
+        display: none;
+    }
+    nav ul li a{
+        padding:30px;
+        position: relative;
+    }
+    nav ul li a:hover{
+        content: "";
+        background-color: transparent;
+        color: white;
+    }
+    nav ul li a:hover::before{
+        content: "";
+        background-color: white;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -99;
+        width: 100%;
+        height: 3px;
+        background-color: white;
     }
 }

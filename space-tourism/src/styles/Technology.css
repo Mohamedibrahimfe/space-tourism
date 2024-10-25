@@ -72,3 +72,14 @@
   text-align: center;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .technology .title{
+    left: 150px;
+  }
+  .technology ul{
+    top: 55%;
+  }
+  .tech-description{
+    width: 60%!important;
+  }
+}

@@ -90,11 +90,11 @@
   text-align: center;
   color: #d0d6f9;
 }
-.details .distance p {
+.details .distance h6 {
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 18px;
   line-height: 32px;
   text-align: center;
   text-transform: uppercase;
@@ -121,4 +121,39 @@
   letter-spacing: 2.3625px;
   text-transform: uppercase;
   color: #d0d6f9;
+}
+@media (min-width: 768px) {
+  .destination .title{
+    left: 150px;
+  }
+  .destination .dest-list{
+    top: 50%;
+    margin-bottom: 50px;
+  }
+  .destination .details p{
+    width: 60%;
+  }
+  .distance{
+    display: flex;
+    flex-direction: row;
+  }
+  .distance div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .distance div h6 {
+    font-size: 22px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .details h1{
+    margin-bottom: 25px;
+  }
 }

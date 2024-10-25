@@ -41,10 +41,18 @@ const Destination = (props) => {
         <p>{props.destData.find((item) => item.name === active).description}</p>
         <hr></hr>
         <div className="distance">
-          <h2>avg. distance</h2>
-          <p>{props.destData.find((item) => item.name === active).distance}</p>
-          <h2>est. travel time</h2>
-          <p>{props.destData.find((item) => item.name === active).travel}</p>
+          <div>
+            <h2>avg. distance</h2>
+            <h6>
+              {props.destData.find((item) => item.name === active).distance}
+            </h6>
+          </div>
+          <div>
+            <h2>est. travel time</h2>
+            <h6>
+              {props.destData.find((item) => item.name === active).travel}
+            </h6>
+          </div>
         </div>
       </div>
     </picture>
